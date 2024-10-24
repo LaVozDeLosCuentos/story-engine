@@ -1,7 +1,13 @@
 <template>
-  <div class="character right">
-    <img src="../assets/sagas/luna/characters/luna/default.png" />
-  </div>
+  <VTooltip placement="top">
+    <!-- Este es el contenido que será envuelto por el tooltip -->
+     <div class="character right">
+        <img src="../assets/sagas/luna/characters/luna/default.png" />
+    </div>
+    <template #popper>
+      <b>Bold</b>
+    </template>
+  </VTooltip>
 </template>
 
 <script setup></script>
